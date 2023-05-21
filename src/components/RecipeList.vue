@@ -11,7 +11,7 @@ import axios from "axios";
     // Pulls posts when the component is created.
     created() {
         axios
-            .get(`http://localhost:3000`)
+            .get(`https://cookingapi.vercel.app/`)
             .then((response) => {
             // JSON responses are automatically parsed.
             this.items = response.data;
